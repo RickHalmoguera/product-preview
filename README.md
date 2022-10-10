@@ -4,7 +4,7 @@
 <h1>Preview Desktop<h1>
 <img align="center" src="./images/Desktop.png"/>
 <h1>Preview del Mobile<h1>
-<img align="center" src="./images/mobile.png"/>
+<img align="center" src="./images/Mobile.png"/>
 
   <h1>Recursos utilizados</h1>
   <ul>
