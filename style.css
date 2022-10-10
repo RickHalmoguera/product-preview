@@ -1,0 +1,112 @@
+body{
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: var(--bg-color-main);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+:root{
+    --bg-color-main: hsl(30, 38%, 92%);
+    --bg-color-sec:hsl(0, 0%, 100%);
+
+    --font-color-main: hsl(228, 12%, 48%);
+    --font-color-sec:hsl(212, 21%, 14%);
+    --font-color-extra:hsl(158, 36%, 37%);
+    --font-color-btn:hsl(0, 0%, 100%);
+
+    --btn-bg-color:hsl(158, 36%, 37%);
+    --btn-bg-color-hover:hsl(158, 62%, 16%);
+
+}
+
+.card-container{
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: var(--bg-color-sec);
+    
+}
+
+.photo-container{
+    border-radius: 10px 10px 0 0;
+    min-height: 240px;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:530px){
+    .card-container{
+        display: flex;
+    }
+    
+    .photo-container{
+        border-radius: 10px 0 0 10px;
+        background-image: url(./images/image-product-desktop.jpg);
+        width: 50%;
+    }
+
+    .product-info-container{
+        width: 50%;
+    }
+    
+}
+
+.product-info-container{
+    padding: 2em;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-color-main);
+}
+
+.product-info-container h4{
+    
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+
+}
+
+.product-info-container h1{
+    font-family: 'Fraunces', serif;
+    color:var(--font-color-sec);
+}
+
+.price-container{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.actual-price-container{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: var(--font-color-extra);
+}
+
+.real-price-container{
+    text-decoration: line-through;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+    border-radius: 10px;
+    background-color: var(--btn-bg-color);
+    color: var(--font-color-btn);
+    font-weight: 700;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: var(--btn-bg-color-hover);
+}
