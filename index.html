@@ -11,21 +11,28 @@
     <title>Product Preview Card Component</title>
 </head>
 <body>
-    <div class="card-container">
-        <div class="photo-container"></div>
-        <div class="product-info-container">
-            <h4>perfume</h4>
-            <h1>Gabrielle Essence Eau De Parfum</h1>
-            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
-            <div class="price-container">
-                <div class="actual-price-container">$149.99</div>
-                <div class="real-price-container">$169.99</div>
+    <main>
+        <div class="card-container">
+            <div class="photo-container">
+                <picture>
+                    <source media="(min-width: 640px)" srcset="./images/image-product-desktop.jpg">
+                    <img src="./images/image-product-mobile.jpg">
+                </picture>
             </div>
-            <div class="btn">
-                <img src="./images/icon-cart.svg" alt="cart">
-                <p>Add to Cart</p>
+            <div class="product-info-container">
+                <p class="perfume-container">perfume</p>
+                <h1>Gabrielle Essence Eau De Parfum</h1>
+                <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <div class="price-container">
+                    <div class="actual-price-container">$149.99</div>
+                    <del>$169.99</del>
+                </div>
+                <div class="btn">
+                    <img src="./images/icon-cart.svg" alt="cart">
+                    <p>Add to Cart</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>

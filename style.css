@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     box-sizing: border-box;
     font-size: 14px;
@@ -25,44 +28,27 @@ body{
 
 .card-container{
     max-width: 600px;
-    border-radius: 10px;
-    background-color: var(--bg-color-sec);
-    
+        
 }
 
-.photo-container{
+
+
+img{
+    display: block;
+    max-width: 100%;
     border-radius: 10px 10px 0 0;
-    min-height: 240px;
-    background-image: url(./images/image-product-mobile.jpg);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-@media screen and (min-width:530px){
-    .card-container{
-        display: flex;
-    }
-    
-    .photo-container{
-        border-radius: 10px 0 0 10px;
-        background-image: url(./images/image-product-desktop.jpg);
-        width: 50%;
-    }
-
-    .product-info-container{
-        width: 50%;
-    }
-    
-}
 
 .product-info-container{
     padding: 2em;
     font-family: 'Montserrat', sans-serif;
     color: var(--font-color-main);
+    background-color: var(--bg-color-sec);
+    border-radius: 0 0 10px 10px;
 }
 
-.product-info-container h4{
+.perfume-container{
     
     font-weight: 500;
     letter-spacing: 2px;
@@ -88,9 +74,7 @@ body{
     color: var(--font-color-extra);
 }
 
-.real-price-container{
-    text-decoration: line-through;
-}
+
 
 .btn{
     display: flex;
@@ -109,4 +93,23 @@ body{
 
 .btn:active{
     background-color: var(--btn-bg-color-hover);
+}
+
+@media screen and (min-width:640px){
+    .card-container{
+        display: flex;
+        max-width: 600px;
+    }
+    .photo-container{
+        max-width: 50%;
+    }
+    img{
+        border-radius: 10px 0 0 10px ;
+    }
+
+    .product-info-container{
+        width: 50%;
+        border-radius: 0 10px 10px 0; 
+    }
+    
 }
