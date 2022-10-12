@@ -2,7 +2,9 @@
 <p>Este proyecto es una practica simple de CSS, donde busco mejorar los conceptos básicos del un Layout Responsive</p>
 
 <h1>Preview Desktop<h1>
-<img align="center" src="./images/desktop.png"/>
+<img align="center" src="./images/Desktop.png"/>
+  <h1>Preview Mobiler<h1>
+<img align="center" src="./images/Mobile.png"/>
 
 
   <h1>Recursos utilizados</h1>
